@@ -1,18 +1,12 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import { Button } from "@/components/ui/button"
+import React from 'react';
+import { Button } from './components/ui/button';
 
-
-function App() {
-  const [count, setCount] = useState(0)
-
+const App = () => {
   return (
-    <>
-      <Button>askjdsa</Button>
-    </>
-  )
+    <div className='flex items-center justify-center h-screen'>
+      <Button variant="secondary">Destructive</Button>
+    </div>
+  );
 }
 
-export default App
+export default App;
